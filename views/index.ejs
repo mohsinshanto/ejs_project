@@ -1,0 +1,14 @@
+<%- include("partial/header") %>
+   <main>
+     <form action="/" method="post">
+        <input type="text" placeholder="Enter fav Movie" name = "favMovie">
+        <button type="submit">Add</button>
+     </form>
+     <% favMovie.forEach(movie => { %>
+        <ul>
+            <li><%= movie %></li>
+         </ul>
+     <% }) %>
+   </main>
+   <%- include("partial/footer") %>
+   
